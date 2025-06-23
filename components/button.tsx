@@ -1,11 +1,11 @@
 "use client";
 import { useFormStatus } from "react-dom";
 
-interface FormButtonProps {
+interface ButtonProps {
   text: string;
 }
 
-export default function FormButton({ text }: FormButtonProps) {
+export default function Button({ text }: ButtonProps) {
   // form의 child component에서만 사용 가능
   const { pending } = useFormStatus();
   return (
